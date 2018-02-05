@@ -1,3 +1,6 @@
-# APPROACH
+APPROACH TO USER HISTORY:
 
-## EXPLAIN APPROACH
+In order to load a user's history of words into the auto complete suggestions, I went with a java map. I made a new 
+DLB root for suggestions to make finding the prefix of the word easier when displaying suggestions. If the word is used,
+it is added/updated in the map. In the map, the word is stored as a key and the value is the frequency. When a word is added,
+the frequency is set to 1, and incremented each time it's used again.
